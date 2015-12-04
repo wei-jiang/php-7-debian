@@ -25,7 +25,7 @@ sudo mkdir /usr/local/php7
 
 git clone https://github.com/php/php-src.git
 cd php-src
-git checkout PHP-7.0.0
+git checkout PHP-7.0
 git pull
 ./buildconf --force
 
@@ -45,7 +45,6 @@ CONFIGURE_STRING="--prefix=/usr/local/php7 \
                   --with-mcrypt \
                   --with-mhash \
                   --enable-mysqlnd \
-                  --with-mysql=mysqlnd \
                   --with-mysql-sock=/var/run/mysqld/mysqld.sock \
                   --with-mysqli=mysqlnd \
                   --with-pdo-mysql=mysqlnd \
